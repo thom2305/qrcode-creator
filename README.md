@@ -6,7 +6,7 @@ Qr Code Creator Is to make qrcode by using python
 
 -qrcode 
         
-    -pip install qrcode
+     pip install qrcode
 
 It May Work on Windows depending on how it works
 
