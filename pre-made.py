@@ -1,21 +1,11 @@
+# Importing library
 import qrcode
-
-def printqr(ele,name):
-    data = ele
-    img = qrcode.make(data)
-    img.save(name + '.png')
-
-def question():
-    awns = input('Do You Want To Restart Yes Or No:')
-    if awns == 'yes':
-        qrmaker()
-    if awns == 'no': 
-        print('Goodbye!')
-        exit()
-def qrmaker():
-    nm = input('What would be in the qr code:')
-    nmfl = input('What would be the name of the file:')
-    printqr(nm,nmfl)
-    question()
-
-qrmaker()
+ 
+# Data to be encoded
+data = 'QR Code using make() function'
+ 
+# Encoding data using make() function
+img = qrcode.make(data)
+ 
+# Saving as an image file
+img.save('MyQRCode1.png')
